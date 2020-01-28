@@ -1,0 +1,19 @@
+{
+    "h1": ".jumbotron",
+    "firstName": ":nth-child(1) > h3",
+    "Surname": ":nth-child(2) > h3",
+    "Price": ":nth-child(3) > h3",
+    "Deposit": ":nth-child(4) > h3",
+    "Checkin": ":nth-child(5) > h3",
+    "Checkout": ":nth-child(6) > h3",
+    "inputFirst": "#firstname",
+    "inputSurname": "#lastname",
+    "inputPrice": "#totalprice",
+    "selectDeposit": "#depositpaid",
+    "inputCheckIn": "#checkin",
+    "inputCheckOut": "#checkout",
+    "Save": "input[value=' Save ']",
+    "Delete": "input[value='Delete']"
+
+}
+
