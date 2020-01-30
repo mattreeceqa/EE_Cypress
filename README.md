@@ -7,11 +7,11 @@ To open cypress
 or
 npm run cypress:open
 
-Inside cypress/integration you'll find the booking test specs
+- Inside cypress/integration are the test specs.  There is one spec for UI driven tests and a seperate one for API only tests.
 
-Inside cypress/support/commands.js you'll find all the shared commands (these are imported through support/index.js)
+- Inside cypress/support/commands.js are the shared commands (these are imported through support/index.js)
 
-Inside /cypress/fixtures/bookingpage_selectors.json you'll find some generic selectors for the page.
+- Inside /cypress/fixtures/bookingpage_selectors.json are some generic selectors for the page.
 
 
 
