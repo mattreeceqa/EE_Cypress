@@ -13,6 +13,8 @@ npm run cypress:open
 
 - Inside /cypress/fixtures/bookingpage_selectors.json are some generic selectors for the page.
 
+- Please find the QA Report.doc for a breakdown of the test activities performed
+
 
 
 
