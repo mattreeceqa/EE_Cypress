@@ -43,7 +43,7 @@ Cypress.Commands.add('addNoDepositBookingData', () => {
 });
 
 Cypress.Commands.add('saveBooking', () => {
-  cy.get(bookingpage.Save).click()
+  cy.get(bookingpage.Save, {timeout: 10000}).click()
 });
 
 Cypress.Commands.add('deleteBooking', () => {

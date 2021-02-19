@@ -33,6 +33,7 @@ describe('Hotel Booking Tests', function () {
       cy.verifySurname('Last');
       cy.verifyDeposit('true')
       cy.getBookingCount().should('be.greaterThan', existingbookings)
+      cy.deleteBooking();
     })
   })
 
@@ -46,6 +47,7 @@ describe('Hotel Booking Tests', function () {
       cy.verifySurname('Lastnd');
       cy.verifyDeposit('false');
       cy.getBookingCount().should('be.greaterThan', existingbookings)
+      cy.deleteBooking();
     })
   });
 
