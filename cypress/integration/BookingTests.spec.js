@@ -58,6 +58,7 @@ describe('Hotel Booking Tests', function () {
     cy.getBookingCount().then(existingbookings => {
       cy.wait(1000);
       cy.deleteBooking();
+      cy.wait(1000);
       cy.getBookingCount().should('be.lessThan', existingbookings)
     })
   })
