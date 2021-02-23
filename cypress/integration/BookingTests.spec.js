@@ -63,4 +63,12 @@ describe('Hotel Booking Tests', function () {
     })
   })
 
+  it('Attempt a booking with missing mandatory data', function () {
+    cy.getBookingCount().then(existingbookings => {
+      cy.addInvalidBookingData();
+      cy.saveBooking();
+      cy.getBookingCount().should('be.equal', existingbookings)
+    })
+  })
+
 });

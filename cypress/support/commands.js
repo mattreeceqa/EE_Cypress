@@ -32,6 +32,12 @@ Cypress.Commands.add('addDepositBookingData', () => {
   cy.get(bookingpage.firstName).click()//click off to close date picker
 });
 
+Cypress.Commands.add('addInvalidBookingData', () => {
+  cy.get(bookingpage.inputFirst).type('Invalid')
+  cy.get(bookingpage.inputSurname).type('Test')
+  cy.get(bookingpage.inputPrice).type('99')
+});
+
 Cypress.Commands.add('addNoDepositBookingData', () => {
   cy.get(bookingpage.inputFirst).type('Firstnd')
   cy.get(bookingpage.inputSurname).type('Lastnd')
