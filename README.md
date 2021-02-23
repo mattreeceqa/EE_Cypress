@@ -5,7 +5,8 @@ Steps to create project
 To open cypress
 ./node_modules/.bin/cypress open 
 or
-npm run cypress:open
+npm run cypress:open (to run UI)
+npm run cypress:run (cmd line)
 
 - Inside cypress/integration are the test specs.  There is one spec for UI driven tests and a seperate one for API only tests.
 
